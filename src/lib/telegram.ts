@@ -4,7 +4,7 @@ export const tg = WebApp;
 export const initTelegram = () => {
   try { tg.ready(); } catch {}
   try { tg.expand(); } catch {}
-  try { tg.setHeaderColor("#0f172a"); tg.setBackgroundColor("#0b1220"); } catch {}
+  try { tg.setHeaderColor("#FFD600"); tg.setBackgroundColor("#FFFFFF"); } catch {}
 };
 
 export const setMainButton = (text: string, onClick: () => void, visible = true) => {

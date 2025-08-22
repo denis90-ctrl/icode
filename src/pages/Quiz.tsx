@@ -24,7 +24,7 @@ export default function Quiz() {
     <div className="container row">
       <div className="badge">Прогресс: {progress}%</div>
       <div className="card">
-        <h2 style={{marginTop:0}}>{q.title}</h2>
+                         <h2 style={{marginTop:0, color:"#000000"}}>{q.title}</h2>
         <div className="row">
           {q.answers.map(a => (
             <button key={a.id} className="btn" onClick={()=>pick(a.id)}>{a.text}</button>

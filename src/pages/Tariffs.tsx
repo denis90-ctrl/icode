@@ -24,10 +24,10 @@ export default function Tariffs() {
       <h1 className="h1">Выберите тариф</h1>
       <div className="grid">
         {tariffs.map(t => (
-          <label key={t.id} className="card" style={{cursor:"pointer", borderColor: picked===t.id ? "#3b82f6" : undefined}}>
+                             <label key={t.id} className="card" style={{cursor:"pointer", borderColor: picked===t.id ? "#FFD600" : undefined, boxShadow: picked===t.id ? "0 0 0 2px #FFD600" : undefined}}>
             <input type="radio" name="tariff" value={t.id} checked={picked===t.id} onChange={()=>setPicked(t.id)} />
             <b style={{marginLeft:8}}>{t.title}</b>
-            <div style={{opacity:.85, marginTop:6}}>{t.desc}</div>
+                                 <div style={{color:"#6B7280", marginTop:6}}>{t.desc}</div>
           </label>
         ))}
       </div>

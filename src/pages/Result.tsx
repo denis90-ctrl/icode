@@ -28,7 +28,7 @@ export default function Result() {
   return (
     <div className="container row">
       <h1 className="h1">Результат</h1>
-      <div className="card">Правильных ответов: <b>{score}</b> из {questions.length}</div>
+                     <div className="card">Правильных ответов: <b style={{color:"#000000"}}>{score}</b> из {questions.length}</div>
       <a className="btn" href="#/">Вернуться в меню</a>
     </div>
   );
