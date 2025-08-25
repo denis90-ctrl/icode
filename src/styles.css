@@ -26,6 +26,22 @@ input[type="radio"]:focus { outline: 2px solid #FFD600; outline-offset: 2px; }
 /* Стили для радио-кнопок */
 input[type="radio"] { accent-color: #FFD600; }
 
+/* Стили для форм */
+input, select {
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #FFD600;
+  outline-offset: 2px;
+  border-color: #FFD600;
+}
+
+input:disabled {
+  cursor: not-allowed;
+}
+
 /* Нижняя навигация */
 .bottom-nav {
   position: fixed;

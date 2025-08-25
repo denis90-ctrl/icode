@@ -8,6 +8,8 @@ import Tariffs from "./pages/Tariffs";
 import About from "./pages/About";
 import Parents from "./pages/Parents";
 import Children from "./pages/Children";
+import AgeSelection from "./pages/AgeSelection";
+import Trial from "./pages/Trial";
 import BottomNavigation from "./components/BottomNavigation";
 
 export default function App() {
@@ -16,8 +18,10 @@ export default function App() {
     <div className="app">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/age" element={<AgeSelection />} />
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/result" element={<Result />} />
+        <Route path="/trial" element={<Trial />} />
         <Route path="/tariffs" element={<Tariffs />} />
         <Route path="/about" element={<About />} />
         <Route path="/parents" element={<Parents />} />

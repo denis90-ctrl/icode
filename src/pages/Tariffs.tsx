@@ -11,11 +11,13 @@ export default function Tariffs() {
   const [picked, setPicked] = useState<string>("");
 
   useEffect(() => {
-    const onConfirm = () => {
-      if (!picked) return;
-      try { tg.sendData?.(JSON.stringify({ type:"tariff_choice", tariffId: picked })); } catch {}
-      alert("Тариф выбран. Мы свяжемся с вами в чате бота.");
-    };
+               const onConfirm = () => {
+             if (!picked) return;
+             try { 
+               tg.sendData?.(JSON.stringify({ type:"tariff_choice", tariffId: picked })); 
+               alert("Выбор сохранён, менеджер свяжется с вами.");
+             } catch {}
+           };
     setMainButton("Выбрать тариф", onConfirm, !!picked);
   }, [picked]);
 
